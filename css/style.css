@@ -1,0 +1,708 @@
+/* start General rules */
+* {box-sizing: border-box}
+
+a {text-decoration: none;color: #262323;}
+
+li {list-style-type: none;}
+
+@font-face {
+    font-family: coconFont;
+    src: url("../arabic-font/Cocon® Next Arabic-Regular.otf");
+}
+
+body {
+    font-family: 'Tajawal', sans-serif;
+
+}
+/* end General rules */
+
+/* start container */
+
+.container {
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* end container */
+
+
+
+/* start social bar*/
+
+.social-bar .full-bar {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-bar .social-left {
+    line-height: 3;
+}
+
+.social-bar .social-left i {
+    margin: 0 20px 0 7px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #FFF;
+    transition: all .2s ease-in-out;
+    color: #000;
+}
+
+.social-bar .social-left span {
+    font-size: 18px
+}
+
+.social-bar .social-left i:hover {
+    background-color: #10887d;
+    color: #FFF;
+}
+
+
+.social-bar .social-right ul {
+    display: flex;
+    justify-content: space-around
+}
+
+.social-bar .social-right ul li {
+    padding: 0 6px
+}
+
+
+.social-bar .social-right li i {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #FFF;
+    transition: all .2s ease-in-out;
+}
+
+
+.social-bar .social-right li:last-of-type a {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #FFF;
+    display: block;
+    transition: all .2s ease-in-out;
+}
+
+.social-bar .social-right li:last-of-type a:hover {
+    background-color: #10887d;
+    color: #FFF;
+}
+
+.social-bar .social-right li i:hover {
+    background-color: #10887d;
+    color: #FFF;
+}
+
+/* end social bar*/
+
+/* start header */
+
+header {
+    background: url(../images/promo-image.png);
+    background-size: cover;
+    min-height: 910px;
+    position: relative;
+}
+
+header .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    color: #FFF;
+    z-index: 1
+}
+
+/* start navbar*/
+nav {
+    background-color: #FFF;
+    display: flex;
+    direction: rtl;
+    padding: 20px 40px;
+    border-radius: 20px;
+}
+
+nav h2 {
+    color: #10887d;
+    margin-top: 0
+}
+
+
+nav .nav-bar ul {
+    display: flex;
+    padding-top: 37px;
+    font-family: serif;
+    font-size: 16px;
+    direction: rtl;
+}
+
+
+nav .nav-bar ul li a {
+    transition: all .2s ease-in-out;
+    margin: 0 20px 0 0;
+}
+
+nav .nav-bar ul li a.active {
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    color: #10887d;
+    padding: 7px 0;
+
+}
+
+nav .nav-bar ul li a:hover {
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    color: #10887d;
+    padding: 7px 0;
+
+}
+
+
+/* end navbar*/
+
+/*start header about*/
+
+.header-about .bx-wrapper {
+    top: 119px;
+}
+
+.header-about .bx-wrapper .bx-viewport .slider {
+    direction: rtl
+}
+
+.header-about .bx-wrapper .bx-viewport .slider .image {
+    margin: auto
+}
+
+
+.header-about .bx-wrapper .bx-viewport .slider > div {
+    display: flex
+}
+
+.header-about .bx-wrapper .text {
+    margin-right: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-about .bx-wrapper .text h2 {
+    margin: 8px;
+}
+
+.header-about .text button {
+    width: 150px;
+    height: 35px;
+    border-radius: 22px;
+    background: transparent;
+    border-color: #212121;
+    color: #FFF;
+    transition: all .2s ease-in-out;
+}
+
+.header-about .text button:hover {
+    background: #10887d;
+    border: none;
+}
+
+.header-about .bx-wrapper .bx-pager.bx-default-pager a {
+    width: 30px;
+    height: 12px;
+}
+
+.header-about .bx-wrapper .bx-pager.bx-default-pager a:hover {
+    background-color: #10887d;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active,
+.bx-wrapper .bx-pager.bx-default-pager a:focus {
+    background-color: #10887d;
+}
+
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+    bottom: -74px;
+}
+
+/*end header about*/
+
+/* end header */
+
+/* start about us */
+.about-us {
+    padding: 33px 0;
+}
+
+.about-us img {
+    max-width: 100%;
+    height: auto
+}
+
+.about-us h1 {
+    margin-top: 0;
+    margin-bottom: 27px;
+    text-align: center;
+    font-size: 28pt;
+    color: #777777;
+}
+
+.about-us .container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 61px;
+    direction: rtl;
+}
+
+.about-us .about-text {
+    text-align: right;
+}
+
+.about-us .about-text h3 {
+    text-align: right
+}
+
+.about-us .about-text p {
+    margin: 30px 0;
+    line-height: 1.6;
+}
+
+.about-us .about-text span:first-of-type {
+    display: block;
+    font-size: 19px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+    color: rgba(119, 119, 119, 255);
+    text-align: right;
+    line-height: 50px;
+    padding-right: 20px;
+}
+
+.about-us .about-text span:nth-of-type(2) {
+    display: block;
+    color: #FFF;
+    font-size: 19px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #10887d;
+    line-height: 50px;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.about-us .about-image {
+    margin: auto;
+}
+
+.about-us .about-image img {
+    width: 100%;
+    height: auto;
+
+}
+
+/* end about us */
+
+/* start the latest training programs */
+
+.latest-training-programs {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+}
+
+.latest-training-programs .container > h2 {
+    margin-top: 0;
+    margin-bottom: 36px;
+    text-align: center;
+    font-size: 28pt;
+    color: #777777;
+
+}
+
+.latest-training-programs .container > img {
+    height: auto;
+    max-width: 100%
+}
+
+.latest-training-programs .programs {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 50px;
+
+}
+
+.latest-training-programs .program {
+    display: grid;
+    grid-template-columns: auto auto;
+    direction: rtl;
+}
+
+.latest-training-programs .program .program-text {
+    background-color: #FFF;
+    position: relative;
+    padding: 0 18px;
+    height: 253px;
+    text-align: right;
+    width: 293px;
+    direction: ltr
+}
+
+.latest-training-programs .programs .program h2 {
+    margin: 12px 0;
+    font-weight: 200;
+    font-size: 21px;
+}
+
+
+.latest-training-programs .program .program-text p {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.latest-training-programs .program .program-text > span {
+    display: block;
+    width: 73px;
+    height: 2px;
+    background-color: #7a7a7a;
+    position: absolute;
+    right: 32px;
+
+}
+
+.latest-training-programs .program-text .info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+
+.latest-training-programs .program-text .info > i {
+    color: #777777;
+    margin: 12px 0 0 23px;
+}
+
+.latest-training-programs .program-text .info .span-right {
+    direction: rtl;
+}
+
+.latest-training-programs .program-text .info .span-right i {
+    margin: 5px 7px;
+}
+
+.latest-training-programs .program-text .info .span-right span {
+    display: block
+}
+
+
+/* end the latest training programs */
+
+/* start training programs */
+.training-programs {
+    background-image: url(../images/background%20image.png);
+    padding-top: 77px;
+}
+
+.training-programs > h2 {
+    margin-top: 0;
+    margin-bottom: 27px;
+    text-align: center;
+    font-size: 28pt;
+    color: #777777;
+}
+
+.training-programs > img {
+    height: auto;
+    max-width: 100%;
+}
+
+.training-programs .side-images {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    height: 0;
+}
+
+.training-programs .side-images img {
+    width: 158px
+}
+
+.training-programs > img {
+    margin: auto;
+    display: block;
+    margin-top: 13px;
+}
+
+.bx-wrapper {
+    box-shadow: none;
+    border: none;
+    background: none;
+}
+
+
+.training-programs .bx-wrapper .bx-pager {
+    bottom: 50px;
+}
+
+.training-programs .bx-wrapper .bx-viewport {
+    min-height: 503px;
+}
+
+.training-programs .bx-viewport .programs {
+    display: grid;
+    justify-content: space-between;
+    height: 503px;
+    align-items: center;
+    text-align: center;
+    direction: rtl;
+    grid-gap: 21px;
+    grid-template-columns: auto auto auto auto;
+}
+
+.training-programs .bx-viewport .programs img {
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    padding: 19px;
+    border-color: #c1c1c1;
+    transition: all .3s ease-in-out;
+    background: #e1e1e1;
+    border: none;
+    transition: all .3s ease-in-out;
+}
+
+.training-programs .bx-viewport .programs img:hover {
+    background-color: #f1eada;
+}
+
+.training-programs .bx-viewport .programs .program {
+    width: 255px;
+    height: 200px;
+    background: #FFF;
+    padding: 36px 0;
+}
+
+.training-programs .bx-viewport .programs .program span {
+    display: block;
+    width: 189px;
+    height: 2px;
+    background-color: #e1e1e1;
+    margin: auto;
+}
+
+.training-programs .bx-wrapper .bx-pager.bx-default-pager a {
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+}
+
+/* end training programs */
+
+/*start contact us*/
+.contact-us {
+    padding-bottom: 35px;
+}
+
+.contact-us h2 {
+    margin-top: 0;
+    margin-bottom: 27px;
+    text-align: center;
+    font-size: 28pt;
+    color: #777777;
+}
+
+.contact-us > img {
+    max-width: 100%;
+    height: auto;
+
+}
+
+.contact-us .container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 43px;
+}
+
+.contact-us .map img {
+    height: auto;
+    max-width: 100%;
+    width: 400px
+}
+
+
+.contact-us form {
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+}
+
+.contact-us form input {
+    margin: 0 0 22px;
+    height: 40px;
+    text-indent: 12px;
+    outline: 0;
+    border-radius: 20px;
+    border: 2px solid #cccccc;
+    max-width: 510px;
+
+}
+
+.contact-us form h3 {
+    margin-top: 0
+}
+
+.contact-us form input:focus {
+    border: 2px solid #10887d;
+}
+
+.contact-us form input:last-of-type {
+    outline: 0;
+    text-indent: 12px;
+    padding-bottom: 121px;
+    padding-top: 25px;
+
+}
+
+.contact-us form button {
+    box-shadow: 0 5px 5px 1px rgba(0, 0, 0, 0.2);
+    margin: auto;
+    width: 150px;
+    height: 35px;
+    border-radius: 22px;
+    background: #10887d;
+    border-color: #7a7777;
+    color: #FFF;
+    transition: all .2s ease-in-out;
+    border: 0;
+}
+
+.contact-us form button:hover {
+    background-color: #085595;
+}
+
+/*end contact us*/
+
+/* start footer */
+footer {
+    background: #f4f4f4;
+    padding: 28px 0;
+}
+
+footer .container span {
+    display: block;
+    width: 195px;
+    height: 2px;
+    background-color: #777777;
+}
+
+footer .copyrights {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+
+}
+
+
+footer .copyrights span {
+    display: inline-bnavck;
+    color: #0e7067;
+    font-weight: 700;
+}
+
+footer .copyrights p {
+    text-align: center
+}
+
+footer > span {
+    display: block;
+    margin: 0 6%;
+    height: 2px;
+    background-color: #777777;
+
+}
+
+footer .container {
+    display: grid;
+    grid-template-columns: 31% 31% 28.5%;
+    direction: rtl;
+    justify-content: space-between;
+}
+
+footer .container div h2 {
+    margin-bottom: 16px;
+    font-weight: 200;
+}
+
+footer .container div:first-of-type {
+    text-align: right;
+}
+
+footer .container div:first-of-type p {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+footer .container div:nth-of-type(2) {
+    padding-right: 40px;
+}
+
+footer .container ul li {
+    margin: 5px;
+    font-size: 14px
+}
+
+footer .container div:nth-of-type(2) ul {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 0;
+    justify-content: space-between;
+    max-width: 550px;
+
+}
+
+footer .container div:nth-of-type(2) ul i {
+    margin-left: 5px;
+}
+
+footer .container div:nth-of-type(2) ul li.active {
+    color: #10887d;
+    font-weight: 700;
+}
+
+
+footer .container div:last-of-type {
+    padding-right: 40px;
+}
+
+footer .container div:last-of-type ul {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 0;
+    justify-content: space-between;
+}
+
+
+footer .container div:last-of-type ul i {
+    margin-left: 5px;
+}
+
+/* end footer */
+
+
